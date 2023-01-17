@@ -67,8 +67,3 @@ const getTernaryNumArray = (integer) => {
     return 'Решений нет';
   };
   
-  const contentEl = document.querySelector('.content');
-  const pEl = document.createElement('p');
-  pEl.textContent = getSolution(200);
-  contentEl.append(pEl);
-  
