@@ -26,10 +26,10 @@ const convertDecimalToTernary = (num) => {
   while (num > 0) {
     result += num % value;
     num = Math.floor(num / value);
-  }
+  };
 
   return result;
-}
+};
 
 const getTernaryNumArray = (num) => {
   const ternaryString = convertDecimalToTernary(num);
@@ -65,12 +65,12 @@ const getNumberSolutions = (number) => {
       mapNumToSolutions[calculatedExpression].push(expression);
     } else {
       mapNumToSolutions[calculatedExpression] = [expression];
-    }
-  }
+    };
+  };
 
   if (number in mapNumToSolutions) {
-    return [...new Set(mapNumToSolutions[number])]
-  }
+    return [...new Set(mapNumToSolutions[number])];
+  };
 
   return 'Решений нет';
 };
